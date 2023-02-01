@@ -45,6 +45,11 @@ PRODUCT_PACKAGES += \
     SettingsOverlayDevice \
     SystemUIOverlayDevice
 
+PRODUCT_PACKAGES += \
+    SettingsOverlay22021211RC \
+    SettingsOverlay22021211RG \
+    SettingsOverlay22021211RI \
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
