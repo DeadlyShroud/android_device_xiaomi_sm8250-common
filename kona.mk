@@ -163,6 +163,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.composer-service \
+    vendor.display.config@1.9 \
+    vendor.display.config@1.9.vendor \
     vendor.qti.hardware.memtrack-service
 
 $(call soong_config_set,qtidisplay,gralloc_handle_has_reserved_size,true)
