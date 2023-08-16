@@ -339,3 +339,8 @@ on property:sys.lmkd.memory.start_reclaim_in_capture=1
 # Preserve the bootloader country when provided; use the world domain otherwise.
 on boot && property:ro.boot.wificountrycode=
     setprop ro.boot.wificountrycode 00
+
+# Restrict access on this node
+on property:sys.boot_completed=1
+    # Only owner can acces this node
+    chmod 440 /proc/net/unix
