@@ -35,6 +35,10 @@ PRODUCT_PACKAGES += \
 # Init
 $(call soong_config_set,xiaomi_kona,variant_lib,//$(LOCAL_PATH):libvariant_xiaomi_munch)
 
+# NFC
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.boot.hardware.sku=munch
+
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureOverlayDevice \
