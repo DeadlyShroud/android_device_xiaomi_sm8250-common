@@ -170,6 +170,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator-service
 
 PRODUCT_PACKAGES += \
+    gralloc.qcom
+
+PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
 # Dolby
