@@ -35,6 +35,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service': blob_fixup()
     .replace_needed('android.hardware.vibrator-V1-ndk_platform.so', 'android.hardware.vibrator-V1-ndk.so')
     .replace_needed('libutils.so', 'libutils-v32.so'),
+    'vendor/etc/init/vendor.qti.media.c2@1.0-service.rc': blob_fixup()
+        .regex_replace(r'writepid\s+/dev/cpuset/foreground/tasks', 'task_profiles ProcessCapacityHigh HighPerformance'),
 }  # fmt: skip
 
 
