@@ -137,8 +137,8 @@ function configure_memory_parameters() {
         echo $LimitSize > /dev/memcg/camera/memory.soft_limit_in_bytes
     fi
 
-    # Set swappiness to 60 for all targets
-    echo 60 > /proc/sys/vm/swappiness
+    # Set swappiness to 100 for all targets
+    echo 100 > /proc/sys/vm/swappiness
 
     # Preserve the existing device watermark policy; retune only with workload data.
     echo 1 > /proc/sys/vm/watermark_scale_factor
