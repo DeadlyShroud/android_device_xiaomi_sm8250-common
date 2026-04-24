@@ -1,4 +1,5 @@
 # Audio
+persist.vendor.audio.speaker.stereo=true
 persist.vendor.audio.delta.refresh=true
 persist.vendor.audio.misound.disable=true
 ro.audio.monitorRotation=true
