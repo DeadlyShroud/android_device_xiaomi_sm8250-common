@@ -9,7 +9,7 @@
 static const variant_info munch_in_info = {
     .hwc_value = "INDIA",
     .sku_value = "",
-
+    .name = "munch",
     .brand = "POCO",
     .device = "munch",
     .marketname = "POCO F4",
@@ -23,7 +23,7 @@ static const variant_info munch_in_info = {
 static const variant_info munch_global_info = {
     .hwc_value = "GLOBAL",
     .sku_value = "",
-
+    .name = "munch",
     .brand = "POCO",
     .device = "munch",
     .marketname = "POCO F4",
@@ -37,7 +37,7 @@ static const variant_info munch_global_info = {
 static const variant_info munch_info = {
     .hwc_value = "",
     .sku_value = "",
-
+    .name = "munch",
     .brand = "Redmi",
     .device = "munch",
     .marketname = "Redmi K40S",
