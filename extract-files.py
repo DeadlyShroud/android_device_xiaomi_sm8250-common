@@ -19,6 +19,8 @@ from extract_utils.main import (
 blob_fixups: blob_fixups_user_type = {
     'vendor/etc/init/init.batterysecret.rc': blob_fixup()
         .regex_replace('.*seclabel u:r:batterysecret:s0\n', ''),
+    'vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc': blob_fixup()
+        .regex_replace('input', 'input wakelock'),
     'vendor/etc/libnfc-nci.conf': blob_fixup()
         .add_line_if_missing('LEGACY_MIFARE_READER=1'),
     'vendor/lib/libaudioroute_ext.so': blob_fixup()
