@@ -25,3 +25,6 @@ allow devicesettings_app vendor_sysfs_graphics:file rw_file_perms;
 # Allow devicesettings_app to access battery sysfs for charge bypass
 allow devicesettings_app vendor_sysfs_battery_supply:dir search;
 allow devicesettings_app vendor_sysfs_battery_supply:file rw_file_perms;
+
+# Allow KProfiles to be adjusted by a devicesettings_app
+allow devicesettings_app sysfs_kprofiles:file rw_file_perms;
