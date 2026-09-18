@@ -148,3 +148,7 @@ genfscon sysfs /devices/virtual/touch/touch_dev/palm_sensor                     
 
 # Awinic haptic resonance calibration (stock sysfs_f0_value).
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-005a/f0_value u:object_r:vendor_sysfs_f0_value:s0
+
+# Two names for the same aggregate counter; do not label the proc subtree.
+genfscon sysfs /devices/virtual/kgsl/kgsl/page_alloc u:object_r:vendor_sysfs_gpu_memory:s0
+genfscon sysfs /kernel/gpu/gpu_memory u:object_r:vendor_sysfs_gpu_memory:s0
