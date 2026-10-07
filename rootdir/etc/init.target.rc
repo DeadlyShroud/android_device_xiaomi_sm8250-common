@@ -173,9 +173,6 @@ on boot
     chown system system /sys/class/thermal/thermal_message/balance_mode
     chown cameraserver cameraserver /sys/class/thermal/thermal_message/flash_state
 
-    # default country code
-    setprop ro.boot.wificountrycode 00
-
     write /sys/block/sda/queue/wbt_lat_usec 75000
 
     chown root system /sys/module/migt/parameters/add_lclus_affinity_uidlist
@@ -417,3 +414,7 @@ on property:sys.boot_completed=1
     copy /vendor/etc/camera/model/ldc_model/ldc_cap_policy /data/vendor/camera/model/ldc_model/ldc_cap_policy
     chown cameraserver audio  /data/vendor/camera/model/ldc_model/ldc_cap_policy
     chmod 0777 /data/vendor/camera/model/ldc_model/ldc_cap_policy
+
+# Preserve the bootloader country when provided; use the world domain otherwise.
+on boot && property:ro.boot.wificountrycode=
+    setprop ro.boot.wificountrycode 00
