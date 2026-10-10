@@ -160,7 +160,7 @@ on init
     write /dev/stune/camera-daemon/schedtune.boost 0
 
     # report max frequency to unity tasks.
-    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so,com.miHoYo.Yuanshen,com.miHoYo.GenshinImpact,com.miHoYo.hkrpg,com.HoYoverse.Nap,com.kurogame.wutheringwaves,com.kurogame.gplay.punishing.grayraven.en,com.tencent.ig,com.vng.pubgmobile,com.pubg.krmobile,com.rekoo.pubgm,com.dts.freefireth,com.dts.freefiremax,com.mobile.legends,com.riotgames.league.wildrift,com.epicgames.fortnite,com.tencent.tmgp.sgame,com.tencent.tmgp.pubgmhd,com.activision.callofduty,com.ea.games,com.pubg.imobile,com.LevelInfinite.Hotta.tof"
     write /proc/sys/kernel/sched_lib_mask_force 255
 
 on charger
