@@ -19,7 +19,7 @@ package org.lineageos.settings.charge;
 import android.app.AlertDialog;
 import android.os.Bundle;
 import androidx.preference.Preference;
-import androidx.preference.PreferenceFragmentCompat;
+import com.android.settingslib.widget.SettingsBasePreferenceFragment;
 import androidx.preference.SwitchPreference;
 import org.lineageos.settings.R;
 
