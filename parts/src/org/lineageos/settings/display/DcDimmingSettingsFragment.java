@@ -25,7 +25,7 @@ import android.content.BroadcastReceiver;
 import android.content.IntentFilter;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
-import androidx.preference.PreferenceFragment;
+import com.android.settingslib.widget.SettingsBasePreferenceFragment;
 import android.preference.PreferenceManager;
 
 import androidx.preference.SwitchPreference;

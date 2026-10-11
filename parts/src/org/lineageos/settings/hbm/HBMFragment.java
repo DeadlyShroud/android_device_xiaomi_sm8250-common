@@ -27,7 +27,7 @@ import android.os.Bundle;
 import android.util.Log;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
-import androidx.preference.PreferenceFragment;
+import com.android.settingslib.widget.SettingsBasePreferenceFragment;
 import androidx.preference.PreferenceManager;
 import androidx.preference.TwoStatePreference;
 

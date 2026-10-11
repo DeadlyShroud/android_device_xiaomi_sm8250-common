@@ -23,7 +23,7 @@ import android.content.SharedPreferences;
 import android.provider.Settings;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
-import androidx.preference.PreferenceFragment;
+import com.android.settingslib.widget.SettingsBasePreferenceFragment;
 import androidx.preference.SwitchPreferenceCompat;
 
 import org.lineageos.settings.R;

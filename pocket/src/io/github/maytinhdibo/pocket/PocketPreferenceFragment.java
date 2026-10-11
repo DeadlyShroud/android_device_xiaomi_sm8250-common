@@ -30,7 +30,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import androidx.preference.Preference;
-import androidx.preference.PreferenceFragment;
+import com.android.settingslib.widget.SettingsBasePreferenceFragment;
 import androidx.preference.SwitchPreference;
 import android.app.ActionBar;
 import android.app.Activity;
