@@ -23,7 +23,7 @@
  */
 package io.github.maytinhdibo.pocket;
 
-import android.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 

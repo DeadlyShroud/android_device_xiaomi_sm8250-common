@@ -23,7 +23,7 @@ import com.android.settingslib.widget.SettingsBasePreferenceFragment;
 import androidx.preference.SwitchPreference;
 import org.lineageos.settings.R;
 
-public class ChargeSettingsFragment extends PreferenceFragmentCompat 
+public class ChargeSettingsFragment extends SettingsBasePreferenceFragment 
         implements Preference.OnPreferenceChangeListener {
 
     private static final String KEY_BYPASS_CHARGE = "bypass_charge";
