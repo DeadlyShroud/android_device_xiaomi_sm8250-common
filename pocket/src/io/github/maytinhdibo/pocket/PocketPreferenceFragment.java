@@ -69,7 +69,7 @@ public class PocketPreferenceFragment extends SettingsBasePreferenceFragment
             SharedPreferences.Editor editor = getActivity().getSharedPreferences(BATTERY_POCKET_MODE, Activity.MODE_PRIVATE)
                     .edit();
             editor.putBoolean("enable", value);
-            editor.commit();
+            editor.apply();
 
             if (value) {
                 PocketUtils.startService(getContext());
