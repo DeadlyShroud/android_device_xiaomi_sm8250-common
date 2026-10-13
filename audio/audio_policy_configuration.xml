@@ -397,11 +397,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
                 <!-- Custom Bluetooth Routes Declaration for Dolby Processing -->
                 <route type="mix" sink="BT A2DP Out"
-                       sources="primary output,deep_buffer,compressed_offload,voip_rx"/>
+                       sources="primary output,deep_buffer,direct_pcm,compressed_offload,voip_rx,immersive_out"/>
                 <route type="mix" sink="BT A2DP Headphones"
-                       sources="primary output,deep_buffer,compressed_offload,voip_rx"/>
+                       sources="primary output,deep_buffer,direct_pcm,compressed_offload,voip_rx,immersive_out"/>
                 <route type="mix" sink="BT A2DP Speaker"
-                       sources="primary output,deep_buffer,compressed_offload,voip_rx"/>
+                       sources="primary output,deep_buffer,direct_pcm,compressed_offload,voip_rx,immersive_out"/>
             </routes>
 
         </module>
