@@ -46,7 +46,6 @@ SpkrLeft SWR DAC_Port Switch:1
 SpkrRight SWR DAC_Port Switch:1
 WSA_RX0 Digital Volume:62
 WSA_RX1 Digital Volume:62
-WSA_CDC_DMA_RX_0 Audio Mixer MultiMedia1:1
 
 disable
 WSA RX0 MUX:ZERO
@@ -63,5 +62,4 @@ SpkrLeft VISENSE Switch:0
 SpkrRight VISENSE Switch:0
 SpkrLeft SWR DAC_Port Switch:0
 SpkrRight SWR DAC_Port Switch:0
-WSA_CDC_DMA_RX_0 Audio Mixer MultiMedia1:0
 
