@@ -129,7 +129,7 @@ volume index from 0 to 100.
     <volume stream="AUDIO_STREAM_NOTIFICATION" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
                                                ref="DEFAULT_DEVICE_CATEGORY_EXT_MEDIA_VOLUME_CURVE"/>
     <volume stream="AUDIO_STREAM_NOTIFICATION" deviceCategory="DEVICE_CATEGORY_HEARING_AID"
-                                               ref="DEFAULT_DEVICE_CATEGORY_HEADSET_VOLUME_CURVE"/>
+                                               ref="DEFAULT_HEARING_AID_VOLUME_CURVE"/>
     <volume stream="AUDIO_STREAM_BLUETOOTH_SCO" deviceCategory="DEVICE_CATEGORY_HEADSET">
         <point>0,-4200</point>
         <point>33,-2800</point>
