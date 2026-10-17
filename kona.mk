@@ -178,7 +178,8 @@ TARGET_INCLUDES_DolbyVision := true
 
 # LunarisDolby
 PRODUCT_PACKAGES += \
-    LunarisDolby
+    LunarisDolby \
+    DSPVolumeSynchronizer
 
 # DRM
 PRODUCT_PACKAGES += \
