@@ -196,8 +196,10 @@ TARGET_INCLUDES_DolbyVision := true
 
 # LunarisDolby
 PRODUCT_PACKAGES += \
-    LunarisDolby \
-    DSPVolumeSynchronizer
+    LunarisDolby
+
+# TouchServices
+$(call inherit-product, packages/apps/TouchServices/touchservice.mk)
 
 # DRM
 PRODUCT_PACKAGES += \

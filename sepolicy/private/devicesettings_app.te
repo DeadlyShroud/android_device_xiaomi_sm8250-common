@@ -30,3 +30,4 @@ get_prop(devicesettings_app, settingslib_prop)
 
 # Core-domain XiaomiParts owns this system property; init applies the map.
 set_prop(devicesettings_app, xiaomi_thermal_profile_prop)
+
