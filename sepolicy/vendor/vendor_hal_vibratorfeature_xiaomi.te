@@ -68,12 +68,12 @@ binder_call(hal_vibratorfeature_default, hal_vibrator_default)
 
 allow hal_vibratorfeature_default {
   mnt_vendor_file
-  persist_subsys_file
+  vendor_persist_subsys_file
   rootfs
 }:dir rw_dir_perms;
 
 allow hal_vibratorfeature_default {
-  persist_subsys_file
+  vendor_persist_subsys_file
   sysfs
   sysfs_leds
 }:file rw_file_perms;

@@ -102,7 +102,7 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250-common
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -236,7 +236,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += \
 $(COMMON_PATH)/manifest.xml \
-$(COMMON_PATH)/media/c2_manifest_vendor.xml
+$(COMMON_PATH)/c2_manifest_vendor.xml
 ifneq ($(TARGET_IS_TABLET),true)
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest_phone.xml
 endif
