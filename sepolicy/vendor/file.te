@@ -34,3 +34,6 @@ type vendor_sysfs_charging_speed, fs_type, sysfs_type;
 
 # Read-only, aggregate KGSL allocation statistic, never per-process data.
 type vendor_sysfs_gpu_memory, fs_type, sysfs_type;
+
+# CPU hotplug controls exposed by XiaomiParts.
+type vendor_sysfs_corecontrol, fs_type, sysfs_type;

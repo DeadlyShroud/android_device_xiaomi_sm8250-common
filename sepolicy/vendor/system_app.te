@@ -1,3 +1,7 @@
 allow system_app zygote:unix_stream_socket getopt;
 allow system_app user_profile_data_file:dir read;
 allow system_app sysfs_zram:file { getattr open read };
+
+# CPU hotplug controls exposed by XiaomiParts.
+allow system_app vendor_sysfs_corecontrol:dir search;
+allow system_app vendor_sysfs_corecontrol:file { getattr open read write };
