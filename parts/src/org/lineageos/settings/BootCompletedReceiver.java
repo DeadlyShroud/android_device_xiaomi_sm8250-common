@@ -37,6 +37,7 @@ import org.lineageos.settings.refreshrate.RefreshUtils;
 import org.lineageos.settings.touchsampling.TouchSamplingUtils;
 import org.lineageos.settings.utils.FileUtils;
 import org.lineageos.settings.kernelmanager.KernelManagerUtils;
+import org.lineageos.settings.gpumanager.GpuManagerUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
@@ -60,6 +61,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         TouchSamplingUtils.restoreSamplingValue(context);
         FileUtils.enableService(context);
         KernelManagerUtils.applySavedSettings(context);
+        GpuManagerUtils.applySavedSettings(context);
         overrideHdrTypes(context);
 
         boolean dcDimmingEnabled = sharedPrefs.getBoolean(DC_DIMMING_ENABLE_KEY, false);
